@@ -1,0 +1,39 @@
+
+.signin-body .signup-body{
+    padding: 100px;
+}
+.form{
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 50px;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.container{
+    margin-bottom: 100px;
+}
+
+.button-color{
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 9px 25px;
+}
+.card{
+    border-radius: 10px;
+    padding: 20px 40px;
+    border: none;
+}
+.card img{
+    width: 300px;
+}
+.card h5{
+    font-weight: 700;
+}
+.card-footer{
+    border-top: none;
+    background-color: white;
+}

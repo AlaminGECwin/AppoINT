@@ -1,0 +1,2 @@
+MAIL_USERNAME=laravel58test@gmail.com
+MAIL_PASSWORD=wapcac-cexxi6-fIjnyx

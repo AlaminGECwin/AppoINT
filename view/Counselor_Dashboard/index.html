@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Dashboard</title>
+
+  </head>
+  <body>
+    
+    <!-- Start -->
+    <div id="content">
+        <div class="row brand d-flex align-items-center justify-content-between bg-info px-5 py-2">
+           <a href="#"><h1>GEC</h1></a>
+           <a href="#">Log out</a>
+        </div>
+        <div class="row sidebar">
+            <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Create profile</a>
+                    <a class="nav-link" id="v-pills-schedule-tab" data-toggle="pill" href="#v-pills-schedule" role="tab" aria-controls="v-pills-schedule" aria-selected="false">Manage Schedule</a>
+                    <a class="nav-link" id="v-pills-appointments-tab" data-toggle="pill" href="#v-pills-appointments" role="tab" aria-controls="v-pills-appointments" aria-selected="false">Review all Appointments</a>
+                  </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content p-3" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item active" aria-current="page">Home</li>
+                            </ol>
+                          </nav>
+                    </div>
+                    
+                    <!-- Create Profile -->
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item active" aria-current="page">Create Profile</li>
+                            </ol>
+                        </nav>
+                        <div class="dashboard-content">
+                            <form class="needs-validation" novalidate>
+                                <div class="form-row">
+                                  <div class="col-md-4 mb-3">
+                                    <label for="validationTooltip01">First name</label>
+                                    <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="Mark" required>
+                                    <div class="valid-tooltip">
+                                      Looks good!
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                    <label for="validationTooltip02">Last name</label>
+                                    <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value="Otto" required>
+                                    <div class="valid-tooltip">
+                                      Looks good!
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                    <label for="validationTooltipUsername">Username</label>
+                                    <div class="input-group">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                      </div>
+                                      <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Username" aria-describedby="validationTooltipUsernamePrepend" required>
+                                      <div class="invalid-tooltip">
+                                        Please choose a unique and valid username.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                  <div class="col-md-6 mb-3">
+                                    <label for="validationTooltip03">City</label>
+                                    <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
+                                    <div class="invalid-tooltip">
+                                      Please provide a valid city.
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip04">State</label>
+                                    <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
+                                    <div class="invalid-tooltip">
+                                      Please provide a valid state.
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3 mb-3">
+                                    <label for="validationTooltip05">Zip</label>
+                                    <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
+                                    <div class="invalid-tooltip">
+                                      Please provide a valid zip.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                      <label for="validationTooltip03">City</label>
+                                      <select class="custom-select" size="3">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                      <div class="invalid-tooltip">
+                                        Please provide a valid city.
+                                      </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                      <label for="validationTooltip04">Country</label>
+                                      <select class="custom-select">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                      <div class="invalid-tooltip">
+                                        Please provide a valid Country.
+                                      </div>
+                                      <div class="custom-control custom-checkbox mt-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                      <label for="validationTooltip05">Check</label>
+                                      <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                                      </div>
+                                      <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                              </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Manage Schedule -->
+                    <div class="tab-pane fade" id="v-pills-schedule" role="tabpanel" aria-labelledby="v-pills-schedule-tab">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item active" aria-current="page">Manage Schedule</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <!-- Review All Appointments -->
+                    <div class="tab-pane fade" id="v-pills-appointments" role="tabpanel" aria-labelledby="v-pills-appointments-tab">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item active" aria-current="page">Review All Appointments</li>
+                            </ol>
+                        </nav>
+                        <table class="table table-striped text-center">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Department</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto@mail.com</td>
+                                <td>SWE</td>
+                                <td>
+                                    <button class="btn btn-success">Accept</button>
+                                    <button class="btn btn-danger">Reject</button>
+                                    <button class="btn btn-info">Details</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton@mail.com</td>
+                                <td>SWE</td>
+                                <td>
+                                    <button class="btn btn-success">Accept</button>
+                                    <button class="btn btn-danger">Reject</button>
+                                    <button class="btn btn-info">Details</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>theBird@mail.com</td>
+                                <td>SWE</td>
+                                <td>
+                                    <button class="btn btn-success">Accept</button>
+                                    <button class="btn btn-danger">Reject</button>
+                                    <button class="btn btn-info">Details</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
