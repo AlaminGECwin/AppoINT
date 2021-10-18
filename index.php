@@ -1,6 +1,6 @@
 <?php
+session_start();
 
-function main(){
 	$controller='Counselling_Manager_GUI';
 	$function='home';
 
@@ -38,6 +38,5 @@ function main(){
 	}else{
 		echo "Controller not found";
 	}
-}
-main();
+
 ?>

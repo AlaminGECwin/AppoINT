@@ -16,9 +16,9 @@ class Database{
 	
 	protected function connect(){
 		//$this->host='localhost';
-		//$this->dbusername='bazarsho_CM';
-		//$this->dbpassword='54213;.,HbD+';
-		//$this->dbname='rowzatus_rsam';
+		//$this->dbusername='generics_appoint';
+		//$this->dbpassword='54213;.,HbD+kjgeappoint';
+		//$this->dbname='generics_appoint';
 
 
 

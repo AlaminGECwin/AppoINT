@@ -10,7 +10,7 @@ class Counselling_Manager_GUI_Controller{
 		include('view/p_library.php');
 		//include('model/home.php');
 		//$this->obj=new homeModel();
-		session_start();
+		
 	}
 	
 	function home(){
@@ -45,24 +45,24 @@ class Counselling_Manager_GUI_Controller{
 	}
 
 	function counselor_dashboard(){
-		//include(getURL('header'));
+		include(getURL('header'));
 		include(getURL('profile_m'));
 		include(getURL('button'));
 		include(getURL('schedule_m'));
 		include(getURL('update_time_slot_m'));
 		include(getURL('add_new_profile_m'));
 		
-
+		
 		if (isset($_SESSION['password'])) {
 			# code...
 			if($_SESSION['user_status']=="old"){
 				
-				//include(getURL('counselor_dashboard'));
+				
 				include(getURL('counselor_dashboard'));
 			}elseif ($_SESSION['user_status']=="new") {
 				# code...
 				include(getURL('setup_counselor'));
-				print_r($_SESSION);
+				
 			}
 		}
 		

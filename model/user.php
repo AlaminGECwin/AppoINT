@@ -2,13 +2,14 @@
 /**
  * 
  */
+
 class User_Model extends Database
 {
 	
 	function __construct()
 	{
 		# code...
-		session_start();
+		
 	}
 	function getAllUser(){
 

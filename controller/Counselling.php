@@ -16,8 +16,10 @@ class Counselling_Controller
 		include('controller/appointment.php');
 		include('controller/schedule.php');
 		//echo getcwd() . "\n";
+		
 	}
 	function send_request(){
+		
 		if($_POST['request_type']=="request_name"){
 			if(isset($_POST['submit_button_name'])){
 
@@ -45,6 +47,7 @@ class Counselling_Controller
 				
 		if ($_POST['request_type']=="user_registry") {
 			# code...
+			
 			if (isset($_POST['register'])) {
 				$first_name=$_POST['first_name'];
 				$last_name=$_POST['last_name'];
@@ -79,7 +82,7 @@ class Counselling_Controller
 					echo "varifyed";
 					$user_type=$file->get_user_type($email);
 					if($user_type!="unauthorized"){
-						echo "authorized";
+						echo "authorized!";
 
 						$supporter=new Security_Guard();
 						$sign_in_encrpted_password=$supporter->encrypt($email,$password);
@@ -95,7 +98,7 @@ class Counselling_Controller
 								$user_status=$file->get_user_status($email);
 								$user_information=$file->get_user_information($email);
 								
-								session_start();
+								
 								
 								
 								$_SESSION['id']=$user_information['id'];
@@ -114,7 +117,8 @@ class Counselling_Controller
 								echo $_SESSION['user_status'];
 								$header_location="Location: index.php?function=".$user_type."_dashboard";
 								echo $header_location;
-								header($header_location);
+								//header($header_location);
+								echo "<script>location='index.php?function=counselor_dashboard'</script>";
 							}
 						}
 					}
@@ -248,7 +252,7 @@ class Counselling_Controller
 		
 
 
-		session_start();
+		
 		$user_type=$_SESSION['user_type'];
 		$header_location="Location: index.php?function=".$user_type."_dashboard";
 		header($header_location);
@@ -287,7 +291,7 @@ class Counselling_Controller
 		
 
 
-		session_start();
+		
 		$user_type=$_SESSION['user_type'];
 		$header_location="Location: index.php?function=".$user_type."_dashboard";
 		header($header_location);
@@ -299,7 +303,7 @@ class Counselling_Controller
 		$appointment_controller=new Appointment_Controller();
 		$appointment_controller->delete_appointment();
 		
-		session_start();
+		
 		$user_type=$_SESSION['user_type'];
 		$header_location="Location: index.php?function=".$user_type."_dashboard";
 		header($header_location);
@@ -310,7 +314,7 @@ class Counselling_Controller
 		$appointment_controller=new Appointment_Controller();
 		$appointment_controller->send_appointment();
 		
-		session_start();
+		
 		$user_type=$_SESSION['user_type'];
 		$header_location="Location: index.php?function=".$user_type."_dashboard";
 		header($header_location);
@@ -353,7 +357,7 @@ class Counselling_Controller
 	        
 		}
 				
-		session_start();
+		
 		$user_type=$_SESSION['user_type'];
 		$header_location="Location: index.php?function=".$user_type."_dashboard";
 		header($header_location);	

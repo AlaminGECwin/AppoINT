@@ -100,6 +100,9 @@
                 <a class="nav-link " href="index.php?function=search_counselling"><button type="button" class="btn btn-warning text-dark font-weight-bold">Search Counselling</button></a>
               </li>
 
+              <?php
+              if(!isset($_SESSION['password'])){ 
+              ?>
               <li class="nav-item">
                 <a class="nav-link " href="index.php?function=sign_up"><button type="button" class="btn btn-white">Connect Now</button></a>
               </li>
@@ -107,7 +110,9 @@
               <li class="nav-item">
                 <a class="nav-link " href="index.php?function=sign_in"><button type="button" class="btn btn-outline-primary">Sign in</button></a>
               </li>
-              
+              <?php
+              } 
+              ?>
             </ul> 
     </nav>
   </div>
